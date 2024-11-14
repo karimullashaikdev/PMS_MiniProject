@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Welcome to the Home Page</h1>
+
+        <!-- Logout Button -->
+        <div class="text-right">
+            <a th:href="@{/logout}" class="btn btn-danger">Logout</a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="list-group mt-4">
+            <a th:href="@{/getAllProjects}" class="list-group-item list-group-item-action">Show Projects</a>
+            <a th:href="@{/getAllEmployees}" class="list-group-item list-group-item-action">Show Employees</a>
+            <a th:href="@{/getAllTasks}" class="list-group-item list-group-item-action">Show Tasks</a>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
